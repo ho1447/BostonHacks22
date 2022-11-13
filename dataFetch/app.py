@@ -38,11 +38,22 @@ def getGenderDepression():
 
 @app.route('/getSmoker', methods=['GET'])
 def getSmokerTimeline():
-    # result = questionCollection.find_one({"question": "Ever told you that you have a form of depression?"})
+    # result = questionCollection.find_one({"question": "Adults who are current smokers (variable calculated from one or more BRFSS questions)"})
     result = {
         "question": "Adults who are current smokers (variable calculated from one or more BRFSS questions)",
         "yearList": [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
         "percentageList": [0.1682776827530438, 0.1634486279186489, 0.16094524597248766, 0.14980358394504406, 0.14559543422537138, 0.14795204474109946, 0.14732329084588644, 0.14584580873896225, 0.14147127725607192, 0.13801283767116457, 0.1303001239342979]
+    }
+    return result
+
+@app.route('/getGenderSmoker', methods=['GET'])
+def getGenderSmoker():
+    # result = questionCollection.find_one({"question": "Adults who are current smokers (variable calculated from one or more BRFSS questions)"})
+    result = {
+        "question": "Adults who are current smokers (variable calculated from one or more BRFSS questions)",
+        "yearList": [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+        "fpercentageList": [0.15642507316977672, 0.15072485643027075, 0.1486223616859652, 0.13950969850427597, 0.13408785884971686, 0.13589807549851088, 0.1354208622787312, 0.13347659047991145, 0.1317568961486093, 0.12764866629585742, 0.12303496156707167],
+        "mpercentageList": [0.1862882846457091, 0.18193293423379278, 0.17840985534336054, 0.1639223997391588, 0.1608887945765438, 0.1633801700390416, 0.16195443027327117, 0.1604341313431267, 0.15276114584655456, 0.14988828452123168, 0.13830064405861142]
     }
     return result
 
