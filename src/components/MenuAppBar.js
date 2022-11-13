@@ -9,8 +9,8 @@ import logo from '../images/logo.png'
 
 function MyTabs() {
   return (
-    <Tabs value="MyTabs">
-      <Tab label="MetalPedal" value="" to="" component={Link} style={{color: "black", fontWeight: 800}}/>
+    <Tabs value="MyTabs" style={{paddingTop: 20}}>
+      <Tab label="MetalPedal" value="" to="" component={Link} style={{color: "black", fontWeight: 800, paddingRight: 200}}/>
       <Tab label="Dashboard" value="/dashboard" to="/dashboard" component={Link} />
       <Tab label="Game" value="/game" to="/game" component={Link} />
     </Tabs>

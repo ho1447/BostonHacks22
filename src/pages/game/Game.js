@@ -26,11 +26,11 @@ export const Game = (props) => (
                     Overwhelmed with data? Why not play a game:
                 </Typography>
                 </Grid>
-                <Grid item>
+                <Grid item xs={8}>
                     <img src={game} alt="Tree" style={{ width: 600, height: 600 }} />
                 </Grid>
-                <Grid item>
-                    <Button variant="contained" onClick={() => window.location.href='https://ncase.me/anxiety/'}>Play with me</Button>
+                <Grid item xs={4}>
+                    <Button variant="contained" style={{backgroundColor: "#4576b5", padding: 10}} onClick={() => window.location.href='https://ncase.me/anxiety/'}>Play</Button>
                 </Grid>
             </Grid>
             </CardContent>
